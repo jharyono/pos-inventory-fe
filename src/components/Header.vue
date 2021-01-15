@@ -39,7 +39,7 @@
 <script>
 export default {
   data: () => ({
-    drawer: false,
+    drawer: true,
     items: [
       {
         action: 'mdi-view-dashboard',
@@ -59,22 +59,22 @@ export default {
       {
         action: 'mdi-database-sync',
         items: [
-          { title: 'Medicine' },
-          { title: 'Supplier' },
-          { title: 'Category' },
-          { title: 'Customer' }
+          { title: 'Goods', route: { name: 'Goods' } },
+          { title: 'Supplier', route: { name: 'Supplier' } },
+          { title: 'Customer', route: { name: 'Customer' } },
+          { title: 'Type & Category', route: { name: 'TypeCategory' } }
         ],
         title: 'Master Data'
       },
       {
         action: 'mdi-book-minus-multiple',
         items: [
-          { title: 'Purchase' },
+          { title: 'Good Receive' },
           { title: 'Sale' },
           { title: 'Stock Opname' },
           { title: 'etc' }
         ],
-        title: 'Inventory'
+        title: 'Transaction'
       },
       {
         action: 'mdi-point-of-sale',

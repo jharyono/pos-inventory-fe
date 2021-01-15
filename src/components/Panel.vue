@@ -1,9 +1,12 @@
 <template>
   <div>
-    <v-toolbar class="rounded-t" color="blue-grey" flat dense dark>
+    <v-toolbar class="rounded-t" color="blue-grey darken-3" flat dense dark>
       <v-toolbar-title>
         {{ title }}
       </v-toolbar-title>
+      <div class="ml-15">
+        <slot name="search" />
+      </div>
       <slot name="action" />
     </v-toolbar>
 

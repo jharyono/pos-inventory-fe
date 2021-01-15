@@ -4,6 +4,10 @@ import Home from '../views/Home.vue'
 import Users from '../views/Admin/Users.vue'
 import Group from '../views/Admin/Group.vue'
 import Setting from '../views/Admin/Setting.vue'
+import Supplier from '../views/MasterData/Supplier.vue'
+import Goods from '../views/MasterData/Goods.vue'
+import Customer from '../views/MasterData/Customer.vue'
+import TypeCategory from '../views/MasterData/TypeCategory.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +31,26 @@ const routes = [
     path: '/admin/setting',
     name: 'Setting',
     component: Setting
+  },
+  {
+    path: '/master/supplier',
+    name: 'Supplier',
+    component: Supplier
+  },
+  {
+    path: '/master/goods',
+    name: 'Goods',
+    component: Goods
+  },
+  {
+    path: '/master/customer',
+    name: 'Customer',
+    component: Customer
+  },
+  {
+    path: '/master/typecat',
+    name: 'TypeCategory',
+    component: TypeCategory
   },
   {
     path: '/about',
