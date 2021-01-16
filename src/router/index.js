@@ -7,7 +7,7 @@ import Setting from '../views/Admin/Setting.vue'
 import Supplier from '../views/MasterData/Supplier.vue'
 import Goods from '../views/MasterData/Goods.vue'
 import Customer from '../views/MasterData/Customer.vue'
-import TypeCategory from '../views/MasterData/TypeCategory.vue'
+import ControlData from '../views/MasterData/ControlData.vue'
 
 Vue.use(VueRouter)
 
@@ -48,9 +48,9 @@ const routes = [
     component: Customer
   },
   {
-    path: '/master/typecat',
-    name: 'TypeCategory',
-    component: TypeCategory
+    path: '/master/controldata',
+    name: 'ControlData',
+    component: ControlData
   },
   {
     path: '/about',
